@@ -9,7 +9,7 @@ const postLogin = (req, res) => {
         .then(data => {
             if(data){
                 
-                const token = jwt.sign({
+                const token = jwt.sign({  
                     id: data.id,
                     email: data.email,
                     firstName: data.firstName
